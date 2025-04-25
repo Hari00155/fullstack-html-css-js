@@ -1,0 +1,30 @@
+<html>
+<title>
+    ERROR HANDLING
+</title>
+<style>
+
+</style>
+
+<body>
+    <header><b>ERROR HANDLING USING TRY CATCH</b></header>
+    <script>
+        try {
+            let num = 10;
+            // let result = num.toUppercase();
+            let age = 16;
+            
+            if (age < 18){
+                    throw new Error('age is not eligible')
+            }
+        } catch (err) {
+           console.log("error occured:",err);
+        } finally {
+            console.log("execution completed");
+        }
+
+    </script>
+
+</body>
+
+</html>

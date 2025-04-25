@@ -1,0 +1,81 @@
+<html>
+<title>
+    EVENTS
+</title>
+<style>
+    h {
+        color: rgb(46, 198, 198);
+    }
+
+    h1{
+        color: burlywood
+    }
+</style>
+
+<body>
+    <div>
+        <h><b>EVENTS LISTERNERS</b></h>
+    </div>
+
+        <h1><b>Today's Date</b></h2>
+    <div id='currentdate'></div>
+
+    <!--ON CLICK EVENTS-->
+   
+    <button id="click-button" type="button" onmouseover="mOver(this)" onmouseout="mOut(this)"> click me </button>
+    <div id="event-demo">
+    </div>
+
+    <!--ON INPUT EVENT-->
+    <input type="text" id="fname">
+    <div id="lower-case"> SAMPLE TEXT</div>
+
+    <!--ON CHANGE EVENT-->
+    <input type="text" id="fname" onchange="lowercase(this)">
+
+    <!--ON MOUSEOVER, ON MOUSEOUT-->
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"> 3. On Mouse Over, On Mouse Out</div>
+
+</body>
+
+
+<script>
+    // Global variable
+    let eventdemoDiv = document.getElementById('event-demo')
+    let lowerCaseDiv = document.getElementById('lower-case')
+
+    let clickButton = document.getElementById('click-button')
+    clickButton.addEventListener("click", clickme)
+
+    let fnameInput = document.getElementById('fname')
+    fnameInput.addEventListener("input", upperCase)
+
+
+    // Functions
+    function clickme() {
+        eventdemoDiv.innerHTML = '<b><i>welcome to on click event demo</i></b>'
+    }
+    function mOver(obj) {
+        obj.style.color = "blue"
+    }
+
+    function mOut(obj) {
+        obj.style.color = "black"
+    }
+
+    function upperCase() {
+        lowerCaseDiv.innerHTML = lowerCaseDiv.innerText.toUpperCase()
+    }
+    function lowerCase(obj) {
+        obj.value = obj.value.toLowerCase()
+    }
+
+    const dateElement = document.getElementById('currentdate');
+    const currentdate = new Date();
+    const formattedDate = currentdate.toString();
+    dateElement.textContent = formattedDate;
+
+</script>
+
+
+</html>

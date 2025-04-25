@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <!--title-->
+  <title>
+    DOM (document of model)
+  </title>
+
+  </style>
+</head>
+
+<body>
+
+  <h2>dom used by h2 tag</h2>
+
+  <div id="welcome" class="domtypes">
+    welcome to dom interface 1
+  </div>
+
+  <div id="tree" class="domtypes">
+    dom tree 2
+  </div>
+
+  <div class="domtypes">
+    getbyelementbyid , getbyelementTag
+  </div>
+
+  <div id="domtree">
+    <img src= "https://www.w3schools.com/js/pic_htmltree.gif" alt="DOM Tree"></img>
+  </div>
+
+
+</body>
+
+<script>
+
+  //<----getbyelementByid----to call by id="welcome">
+  let welcomeDiv = document.getElementById('welcome')
+  welcomeDiv.innerHTML = '<h1><b>Interface of dom 2</b><h1>'
+  welcomeDiv.style.background = "green"
+  
+  //<--getbyelementTag-- to change  to call by div>
+  let allDivs = document.getElementsByTagName('div')
+  console.log(allDivs)
+ 
+  let treeDiv = allDivs.tree
+
+  treeDiv.innerHTML = "document of model 3"
+  treeDiv.style.background = "red"
+
+  // <!--getbyelementbyclass-->
+  const elements = document.getElementsByClassName ('domtypes')
+  // console.log(elements[0])
+  // elements[0].style.color = 'blue'
+
+  for (let item of elements) {
+    item.style.color='blue'
+}
+ 
+  // <!--getbyElementsByid image-- to call a id and modify a image>
+  let domtreeImgElement = document.getElementById("domtree") 
+  domtreeImgElement.setAttribute("src","https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo2aexmad15o3aaqxdu8i.png")
+  domtreeImgElement.setAttribute("width", "100")
+  domtreeImgElement.setAttribute("height", "100")
+
+  // <!--to create a html element using dom-->
+  let newImgTag = document.createElement("img")
+  newImgTag.setAttribute("src","https://images.slideplayer.com/24/7585982/slides/slide_2.jpg")
+  newImgTag.setAttribute("width", "150")
+  newImgTag.setAttribute("height", "250")
+  
+  // <!-- create in html element-->
+  document.body.appendChild(newImgTag)
+  document.body.appendChild(domtreeImgElement)
+  
+
+
+</script>
+
+</html>

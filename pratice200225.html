@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+
+.box{
+    background-color: orange;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+
+.innerbox{
+    background-color: blanchedalmond;
+    display:flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 2rem;
+    border: 2px solid;
+    border-radius: 8%;
+    width:400px;
+}
+
+.spacer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    margin: 25px;
+}
+
+
+</style>
+
+
+<body>
+    
+    <div class="box">
+        <div class="innerbox">
+        <h1>SIGN IN </h1>
+        
+        <p>Username:</p>
+        <input type="text"></input>
+       
+        <p>Password:</p>
+        <input type="password"></input>
+        
+        <div class="spacer">
+            <input type="checkbox"> remember me </input>
+             <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+        </div>
+
+        <input type="button" value="sign in ">
+     </input>
+    </div>
+  
+</div>
+   
+</body>
+</html>

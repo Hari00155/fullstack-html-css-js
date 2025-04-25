@@ -1,0 +1,86 @@
+[
+{
+    "Name": "HARIHARAN A",
+    "Age": "20",
+    "Dob": "30.03.2004",
+    "Blood group": "A+",
+    "Height": "184cm",
+    "weight": "75kg",
+    "10th mark in %": "50.2",
+    "Diploma mark in %": "88",
+    "BE mark in cgpa": "8.08",
+    "Placed company": "MRF",
+    "Qualification": "BE.MECH",
+    "Passout year": 2025
+}
+{
+    "Name": "Arjun kumar",
+    "Age": "22",
+    "Dob": "12.05.2002",
+    "Blood group": "B+",
+    "Height": "178cm",
+    "weight": "70kg",
+    "10th mark in %": "72.2",
+    "Diploma mark in %": "85.0",
+    "BE mark in cgpa": "7.8",
+    "Placed company": "TCS",
+    "Qualification": "BE.CSE",
+    "Passout year": 2023
+},
+{
+    "Name": "Priya",
+    "Age": "21",
+    "Dob": "20.11.2003",
+    "Blood group": "O+",
+    "Height": "165cm",
+    "weight": "58kg",
+    "10th mark in %": "89",
+    "Diploma mark in %": "92",
+    "BE mark in cgpa": "9.1",
+    "Placed company": "Infosys",
+    "Qualification": "BE.IT",
+    "Passout year": 2024
+},
+{
+    "Name": "Vikram",
+    "Age": "23",
+    "Dob": "05.02.2002",
+    "Blood group": "A-",
+    "Height": "180cm",
+    "weight": "74kg",
+    "10th mark in %": "65.2",
+    "Diploma mark in %": "79",
+    "BE mark in cgpa": "7.5",
+    "Placed company": "MRF",
+    "Qualification": "BE.MECH",
+    "Passout year": 2021
+}
+{
+    "Name": "Divya Ramesh",
+    "Age": "20",
+    "Dob": "15.08.2004",
+    "Blood group": "B-",
+    "Height": "160cm",
+    "weight": "55kg",
+    "10th mark in %": "92.5",
+    "Diploma mark in %": "90",
+    "BE mark in cgpa": "7.1",
+    "Placed company": "Accenture",
+    "Qualification": "BE.ECE",
+    "Passout year": 2025
+}
+{
+    "Name": "Rahul",
+    "Age": "22",
+    "Dob": "10.03.200",
+    "Blood group": "AB+",
+    "Height": "175cm",
+    "weight": "72kg",
+    "10th mark in %": "78.2",
+    "Diploma mark in %": "89",
+    "BE mark in cgpa": "8.5",
+    "Placed company": "Wipro",
+    "Qualification": "BE.CIVIL",
+    "Passout year": 2025
+}
+]

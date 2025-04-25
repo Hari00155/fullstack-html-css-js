@@ -1,0 +1,140 @@
+<html>
+<title>
+    JAVASCRIPT STRING METHOD
+</title>
+<style>
+
+</style>
+
+<body>
+    <h><b>JAVASCRIPT STRING METHOD</b></h>
+    <!-- 
+    <button onclick="myFunction()">Try it</button>
+
+   <p id="demo">Please visit Doctor!</p>
+
+   <p id="all"></p> -->
+
+    <div id="String-example">
+    </div>
+
+</body>
+
+<script>
+
+    let stringExampleDiv = document.getElementById("String-example")
+    let list = document.createElement("li")
+
+    let text = "HARIHARAN A FULLSTACK-DEVELOPER"
+    let length = text.length;
+    let clone;
+    let text1 = "con";
+    let text2 = "cat";
+    let text3 = text1.concat(" ", text2);
+
+
+    //Length example 1
+    list.innerHTML = `String length: ${length}`
+    // stringExampleDiv.appendChild(list)
+
+    //Uppercase 2
+    clone = list.cloneNode(true)
+    clone.innerHTML = `String Uppercase() ${text.toUpperCase()}`
+    stringExampleDiv.appendChild(clone)
+
+    // Lowercase 3
+    clone = list.cloneNode(true)
+    clone.innerHTML = `String LowerCase(): ${text.toLowerCase()}`
+    stringExampleDiv.appendChild(clone)
+
+    // Concat method 4
+    clone = list.cloneNode(true)
+    clone.innerHTML = `String concat(): ${text.concat()}`
+    stringExampleDiv.appendChild(clone)
+
+    // Charat 5 
+    // document.getElementById("String-example").innerHTML=text.charAt(2);
+
+    // CharcodeAt 6
+    // document.getElementById("String-example").innerHTML=text.charCodeAt(0);
+
+    // const clgname = "s1t";
+    // let letter = clgname.at(2);
+    // At 7
+    // document.getElementById("String-example").innerHTML=letter;
+
+    //[-] 8
+    // document.getElementById("String-example").innerHTML= text[2];
+
+
+    // let fruit = "Apple,orange,cherry"
+    // let part = fruit.slice(0,5);
+
+    //Slice 9
+    // document.getElementById("String-example").innerHTML=part;
+
+    //Sub Slice 10
+    // document.getElementById("String-example").innerHTML=fruit.substring(0,12);
+
+
+    // //Sub str 11
+    // document.getElementById("String-example").innerHTML=fruit.substr(0,19);
+
+    //    let name1 = "      HARI      "
+    //    let name2 = name1.trim();
+
+    //    // String trim 12
+    //    document.getElementById("String-example").innerHTML= "namelength1="+name1.length + "<br> namelength2="+name2.length;
+
+    // let Name1 = "      HARAN      "
+    // let Name2 = Name1.trimStart();
+
+    //  trimStart 13
+    // document.getElementById("String-example").innerHTML="Namelength1="+Name1.length + "<br> Namelength2="+Name2.length;
+
+    //   let car1 = "     BMW    "
+    //   let car2 = car1.trimEnd();
+
+    //trimEnd 14
+    //   document.getElementById("String-example").innerHTML="car1length1="+car1.length + "<br> carlength2="+car2.length;
+
+    // let front = "7"
+    // front = front.padStart(3,"2");
+
+    // padStart 15
+    // document.getElementById("String-example").innerHTML=front;
+
+    // let back = "4"
+    // back = back.padEnd("10",0)
+
+    // //padEnd 16
+    // document.getElementById("String-example").innerHTML=back;
+
+    // let word = "good bye"
+    // let result = word.repeat(5);
+    // //repeat
+    // document.getElementById("String-example").innerHTML=result;
+
+    //Replace 17
+    // function myFunction() {
+    //   let text = document.getElementById("demo").innerHTML;
+    //   document.getElementById("demo").innerHTML =
+    //   text.replace("Doctor","Engineer");
+    // }
+
+    // let statement = "I love cats. Cats are very easy to love. Cats are very popular."
+    // statement = statement.replaceAll("Cats","Dogs");
+    // statement = statement.replaceAll("cats","dogs");
+
+    // //replace all 18
+    // document.getElementById("all").innerHTML = statement;
+
+    // //split 19
+    // let note = "m,n,h,y,i,o";
+    // const myArray = text.split(",");
+    // document.getElementById("String-example").innerHTML = myArray[0];
+
+
+</script>
+
+</html>

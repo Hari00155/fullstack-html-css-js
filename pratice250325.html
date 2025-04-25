@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON Practice</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>************* JSON ***********</h1>
+    <div id="studentdetail"></div>
+
+    <script>
+        let studentdetail = [
+            {
+                "Name": "HARIHARAN A",
+                "Age": 20,
+                "Dob": "30.03.2004",
+                "Bloodgroup": "A+",
+                "Height": "184cm",
+                "Weight": "75kg",
+                "10th_mark_in_%": 50.2,
+                "Diploma_mark_in_%": 88,
+                "BE_mark_in_cgpa": 8.08,
+                "Placed_company": "MRF",
+                "Qualification": "BE.MECH",
+                "Passout_year": 2025
+            },
+            {
+                "Name": "Arjun Kumar",
+                "Age": 22,
+                "Dob": "12.05.2002",
+                "Bloodgroup": "B+",
+                "Height": "178cm",
+                "Weight": "70kg",
+                "10th_mark_in_%": 72.2,
+                "Diploma_mark_in_%": 85.0,
+                "BE_mark_in_cgpa": 7.8,
+                "Placed_company": "TCS",
+                "Qualification": "BE.CSE",
+                "Passout_year": 2023
+            },
+            {
+                "Name": "Rahul",
+                "Age": "22",
+                "Dob": "10.03.200",
+                "Bloodgroup": "AB+",
+                "Height": "175cm",
+                "weight": "72kg",
+                "10th mark in %": "78.2",
+                "Diploma mark in %": "89",
+                "BE mark in cgpa": "8.5",
+                "Placed_company": "Wipro",
+                "Qualification": "BE.CIVIL",
+                "Passout year": 2025
+            },
+            {
+                "Name": "Divya Ramesh",
+                "Age": "20",
+                "Dob": "15.08.2004",
+                "Bloodgroup": "B-",
+                "Height": "160cm",
+                "weight": "55kg",
+                "10th mark in %": "92.5",
+                "Diploma mark in %": "90",
+                "BE mark in cgpa": "7.1",
+                "Placed_company": "Accenture",
+                "Qualification": "BE.ECE",
+                "Passout year": 2025
+            },
+            {
+                "Name": "Vikram",
+                "Age": "23",
+                "Dob": "05.02.2002",
+                "Bloodgroup": "A-",
+                "Height": "180cm",
+                "weight": "74kg",
+                "10th mark in %": "65.2",
+                "Diploma mark in %": "79",
+                "BE mark in cgpa": "7.5",
+                "Placed_company": "MRF",
+                "Qualification": "BE.MECH",
+                "Passout year": 2021
+            }
+
+        ];
+        // Display student details
+        // let output = `Name: ${studentdetail[1].Name}, Age: ${studentdetail[1].Age}, Placedcompany: ${studentdetail[1].Placed_company}, Qualification: ${studentdetail[1].Qualification}`;
+        // document.getElementById("studentdetail").innerHTML = output;
+
+        // FOR LOOP
+        for (let i = 0; i < studentdetail.length; i++) {
+            let output = `Name: ${studentdetail[i].Name}, Age: ${studentdetail[i].Age}, Placedcompany: ${studentdetail[i].Placed_company}, Qualification: ${studentdetail[i].Qualification}`;
+            
+            let listElement = document.createElement("li")
+            listElement.innerHTML=output
+
+            document.getElementById("studentdetail").appendChild(listElement)
+        }
+    </script>
+</body>
+
+</html>

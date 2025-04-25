@@ -1,0 +1,18 @@
+.css-style {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/125/804/small/beautiful-light-blue-pastel-background-minimal-scene-blue-empty-room-stand-show-cosmetic-product-stage-showcase-pastel-color-sky-blue-background-vector.jpg);       
+}
+
+table,th,tr,td {
+    border: 1px solid black;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.box {
+
+    display: flex;
+    flex-direction:column;
+    padding: 10rem;
+    align-items: center;
+}

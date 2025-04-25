@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <!--title-->
+    <title>
+        FORM CREATE FOR JAVA SCRIPT BACKEND PROCESS
+    </title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <style>
+        .formstyle {
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="formstyle">
+        <form>
+            <p>
+                <label for="name">* Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required class="form-control">
+            </p>
+
+            <p>
+                <label for="Email">* Email</label>
+                <input type="text" id="Email" placeholder="Email" required class="form-control">
+            </p>
+
+            <p>
+                <label for="age">* Age</label>
+                <input type="text" id="age" placeholder="age" required class="form-control">
+            </p>
+
+            <p>
+                <label for="programming-languages">* Which programming languages do you know?</label>
+                <select id="programming-languages" class="form-select">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="java">Java</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="programming">* Do you like programming? </label><br>
+                <input type="checkbox" id="yes" name="programming" value="yes"> Yes
+                <input type="checkbox" id="no" name="programming" value="no"> No
+            </p>
+
+            <p>
+                <label for="know-programming">* Do you already know programming?</label>
+                <select id="know-programming" class="form-select">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="learn-from">* Do you learn from</label><br>
+                <input type="checkbox" id="youtube" name="learn" value="youtube"> YouTube
+                <input type="checkbox" id="institute" name="learn" value="institute"> Institute
+            </p>
+
+            <p>
+                <label for="tell-about">* Tell about programming</label>
+            </p>
+            <textarea class="form-control"></textarea>
+
+            <p>
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>
